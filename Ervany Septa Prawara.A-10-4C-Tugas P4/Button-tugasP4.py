@@ -1,23 +1,18 @@
 # import modul
-import tkinter
-
+from tkinter import *
+# from tkinter import *
 
 def main():
-    mainform = tkinter.Tk()
+    mainform = Tk()
 
     mainform.wm_title("Button")
     mainform.geometry('500x200')
 
-    lbl1 = tkinter.Label(mainform)
+    lbl1 = Label(mainform)
     lbl1['text'] = "Button   :"
     lbl1.grid(row=0, column=0)
 
-    #lbl2 = tkinter.Label(mainform)
-    #lbl2['text'] = "Password"
-    #lbl2.grid(row=1, column=0)
-
-
-    btn1 = tkinter.Button(mainform)
+    btn1 = Button(mainform)
     btn1['text']="Hilangkan Text"
     btn1['activebackground']="pink"
     btn1['activeforeground']="red"
@@ -28,7 +23,6 @@ def main():
     btn1['font']="calibri"
     btn1['height']=2
     # btn1['highlightcolor']="white"
-    # btn1['image']='button.png'
     btn1['justify']='center'
     btn1['padx']=10
     btn1['pady']=10
@@ -39,23 +33,18 @@ def main():
     btn1['wraplength']=100
     btn1.grid(row=0, column=1)
 
-    #txt2 = tkinter.Entry(mainform)
-    #txt2['width'] = 40
-    # sd
-    #txt2.grid(row=1, column=1, columnspan=2)
+    lbl2 = Label(mainform)
+    lbl2['text'] = "Button 2    :"
+    lbl2.grid(row=1, column=0)
 
-    #chk = tkinter.Checkbutton(mainform)
-    #chk['text'] = "Remember Me"
-    #chk.grid(row=2, column=0)
-
-    #btn1 = tkinter.Button(mainform)
-    #btn1['text'] = "Login"
-    #btn1.grid(row=2, column=1)
-
-    #btn2 = tkinter.Button(mainform)
-    #btn2['text'] = "Exit"
-    #btn2.grid(row=2, column=2)
-
+    btn2 = Button(mainform)
+    photo = PhotoImage(file =r"D:\Kuliah\Semester 4\Pemrograman Berbasis Desktop (Muhammad Syaeful Fajar, S.Pd., M.Kom.)\Tugas\Ervany Septa Prawara.A-10-4C-Tugas P4\owl.png")
+    btn2['text']="Button"
+    photoimage = photo.subsample(10, 10) 
+    btn2['image']=photoimage
+    # btn1['highlightcolor']="white"
+    btn2.grid(row=1, column=1)
+    
     mainform.mainloop()
 
 
