@@ -16,6 +16,7 @@ def main():
     #lbl2['text'] = "Password"
     #lbl2.grid(row=1, column=0)
 
+
     btn1 = tkinter.Button(mainform)
     btn1['text']="Hilangkan Text"
     btn1['activebackground']="pink"
@@ -26,12 +27,17 @@ def main():
     btn1['fg']="green"
     btn1['font']="calibri"
     btn1['height']=2
-    # btn1['highlightcolor']="red"
-    btn1['justify']='right'
+    # btn1['highlightcolor']="white"
+    # btn1['image']='button.png'
+    btn1['justify']='center'
+    btn1['padx']=10
+    btn1['pady']=10
+    btn1['relief']='ridge'
+    btn1['state']='active'
     btn1['underline']=5
     btn1['width'] = 40
-    btn1.grid(row=0, column=1,columnspan=2)
-    # btn1.grid
+    btn1['wraplength']=100
+    btn1.grid(row=0, column=1)
 
     #txt2 = tkinter.Entry(mainform)
     #txt2['width'] = 40
