@@ -11,6 +11,8 @@ def main():
     lbl1['text'] = "5 Opsi    :"
     lbl1.grid(row=0, column=0)
 
+    # ganti
+
     #lbl2 = tkinter.Label(mainform)
     #lbl2['text'] = "Password"
     #lbl2.grid(row=1, column=0)
