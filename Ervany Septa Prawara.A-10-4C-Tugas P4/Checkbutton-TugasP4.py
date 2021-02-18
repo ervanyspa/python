@@ -8,39 +8,25 @@ def main():
     mainform.geometry('500x200')
 
     lbl1 = tkinter.Label(mainform)
-    lbl1['text'] = "5 Opsi    :"
+    lbl1['text'] = "Checkbutton    :"
     lbl1.grid(row=0, column=0)
 
-    #lbl2 = tkinter.Label(mainform)
-    #lbl2['text'] = "Password"
-    #lbl2.grid(row=1, column=0)
-
-    btn1 = tkinter.Checkbutton(mainform)
-    btn1['text']="Check"
-    btn1['bd']=9
-    btn1['bg']="yellow"
-    btn1['activebackground']="pink"
-    btn1['activeforeground']="red"
-
-    #btn1['font']="calibri"
-    btn1.grid(row=0, column=1)
-
-    #txt2 = tkinter.Entry(mainform)
-    #txt2['width'] = 40
-    #txt2.grid(row=1, column=1, columnspan=2)
-
-    #chk = tkinter.Checkbutton(mainform)
-    #chk['text'] = "Remember Me"
-    #chk.grid(row=2, column=0)
-
-    #btn1 = tkinter.Button(mainform)
-    #btn1['text'] = "Login"
-    #btn1.grid(row=2, column=1)
-
-    #btn2 = tkinter.Button(mainform)
-    #btn2['text'] = "Exit"
-    #btn2.grid(row=2, column=2)
-
+    chk1 = tkinter.Checkbutton(mainform)
+    # chk1['text']="sdadsa"
+    chk1['activebackground']="green"
+    chk1['activeforeground']="red"
+    chk1['bg']="yellow"
+    chk1['bitmap']='warning'
+    chk1['bd']=9
+    chk1['command']=lbl1.destroy
+    chk1['cursor']='plus'
+    # chk1['disabledforeground']="white"
+    # chk1['font']="calibri"
+    # chk1['fg']="yellow"
+    chk1['height']=30
+    chk1['highlightcolor']="white"
+    chk1.grid(row=0, column=1)
+    
     mainform.mainloop()
 
 
