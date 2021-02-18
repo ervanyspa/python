@@ -28,6 +28,7 @@ def main():
 
     #txt2 = tkinter.Entry(mainform)
     #txt2['width'] = 40
+    # sd
     #txt2.grid(row=1, column=1, columnspan=2)
 
     #chk = tkinter.Checkbutton(mainform)
