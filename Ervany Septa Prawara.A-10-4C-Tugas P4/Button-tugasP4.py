@@ -24,6 +24,7 @@ def main():
     btn1['activeforeground']="red"
     btn1['font']="calibri"
     btn1.grid(row=0, column=1)
+    # btn1.grid
 
     #txt2 = tkinter.Entry(mainform)
     #txt2['width'] = 40
