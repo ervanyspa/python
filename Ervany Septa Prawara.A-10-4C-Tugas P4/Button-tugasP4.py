@@ -9,7 +9,7 @@ def main():
     mainform.geometry('500x200')
 
     lbl1 = tkinter.Label(mainform)
-    lbl1['text'] = "5 Opsi    :"
+    lbl1['text'] = "Button   :"
     lbl1.grid(row=0, column=0)
 
     #lbl2 = tkinter.Label(mainform)
@@ -17,13 +17,20 @@ def main():
     #lbl2.grid(row=1, column=0)
 
     btn1 = tkinter.Button(mainform)
-    btn1['text']="Button1"
-    btn1['bd']=9
-    btn1['bg']="yellow"
+    btn1['text']="Hilangkan Text"
     btn1['activebackground']="pink"
     btn1['activeforeground']="red"
+    btn1['bd']=5
+    btn1['bg']="yellow"
+    btn1['command']=lbl1.destroy
+    btn1['fg']="green"
     btn1['font']="calibri"
-    btn1.grid(row=0, column=1)
+    btn1['height']=2
+    # btn1['highlightcolor']="red"
+    btn1['justify']='right'
+    btn1['underline']=5
+    btn1['width'] = 40
+    btn1.grid(row=0, column=1,columnspan=2)
     # btn1.grid
 
     #txt2 = tkinter.Entry(mainform)
