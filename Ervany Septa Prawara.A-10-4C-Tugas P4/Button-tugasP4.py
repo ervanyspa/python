@@ -1,6 +1,5 @@
 # import modul
 from tkinter import *
-# from tkinter import *
 
 def main():
     mainform = Tk()

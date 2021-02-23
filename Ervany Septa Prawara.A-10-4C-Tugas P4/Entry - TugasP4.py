@@ -1,30 +1,48 @@
-import tkinter
+from tkinter import *
 
 
 def main():
-    mainform = tkinter.Tk()
+    mainform = Tk()
 
     mainform.wm_title("Entry")
     mainform.geometry('500x200')
 
-    lbl1 = tkinter.Label(mainform)
-    lbl1['text'] = "5 Opsi    :"
+    lbl1 = Label(mainform)
+    lbl1['text'] = "Entry 1     :"
     lbl1.grid(row=0, column=0)
+    
+    entry1 = Entry(mainform)
+    entry1['bg']="red"
+    entry1['bd']=5
+    entry1['cursor']="pencil"
+    # entry1['exportselection']=1
+    entry1['fg'] = "pink"
+    entry1['font']="calibri 12"
+    entry1['highlightbackground']="green"
+    entry1['highlightcolor']="yellow"
+    entry1['highlightthickness']=10
+    entry1['insertbackground']='cyan'
+    # entry1['insertborderwidth']=100
+    entry1['insertofftime']=50
+    # entry1['insertontime']=50
+    entry1['insertwidth']=10
+    entry1['justify']="center"
+    entry1['relief']="groove"
+    entry1['selectbackground']="green"
+    entry1['selectborderwidth']=50
+    entry1['selectforeground']="yellow"
+    # entry1['show']="*"
+    # entry1['textvariable']=StringVar()
+    entry1['width']=30
+    # entry1['xscrollcommand']=
+    entry1.grid(row=0, column=1)
 
-    #lbl2 = tkinter.Label(mainform)
-    #lbl2['text'] = "Password"
-    #lbl2.grid(row=1, column=0)
 
-    btn1 = tkinter.Entry(mainform)
-    btn1['text']="Check"
-    btn1['bd']=5
-    btn1['bg']="pink"
-    #btn1['font']="calibri"
-    btn1.grid(row=0, column=1)
 
-    #txt2 = tkinter.Entry(mainform)
-    #txt2['width'] = 40
-    #txt2.grid(row=1, column=1, columnspan=2)
+    # txt1 = Label(mainform)
+    # txt1['text']=entry1.get()
+    # txt1['width'] = 40
+    # txt1.grid(row=0, column=2)
 
     #chk = tkinter.Checkbutton(mainform)
     #chk['text'] = "Remember Me"
